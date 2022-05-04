@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Đặt hàng</title>
+	<link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico" />
+	<link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div id="header" style="margin-bottom: 50px;">
+		<div id="header-top">
+			<div id="logo">
+				<a href="#">
+					<img id="img-logo" src="image/logo.jpg" alt="">
+				</a>
+			</div>
+			<div id="menu">
+				<ul id="main-menu">
+					<li class="text"><a class="index" href="#">Trang chủ</a></li>
+					<li class="text"><a class="index" href="#hang-xe">Hãng Xe</a>
+						<ul id="sb-menu">
+							<li class="sb-text"><a class="sb-index" href="#">YAMAHA</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">HONDA</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">SUZUKI</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">KAWASAKI</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">VENTO</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">SYM</a></li>
+							<li class="sb-text"><a class="sb-index" href="#">HYOSUNG</a></li>
+						</ul>
+
+					</li>
+					<li class="text"><a class="index" href="#pk">Phụ Kiện Xe</a> </li>
+					<li class="text"><a class="index" href="#text-lh">Pages</a></li>
+					<li class="text"><a class="index" href="#form_Demo">Liên Hệ</a></li>
+					<li class="text"><a class="index" href="dangnhapp/dangnhap.html">Đăng nhập</a></li>
+				</ul>
+			</div>
+			<div id="cart">
+				<a href="cart.html" id="gio-hang">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<input id="number" type="text" value="0">
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="shopping-cart">
+
+		<div class="column-labels">
+			<label class="product-image">Hình ản</label>
+			<label class="product-details">Sản phẩm</label>
+			<label class="product-price">Giá</label>
+			<label class="product-quantity">Số lượng</label>
+			<label class="product-removal">Xóa</label>
+			<label class="product-line-price">Tổng</label>
+		</div>
+
+		<div class="product">
+			<div class="product-image">
+				<img src="./image/exciter2.jpg">
+			</div>
+			<div class="product-details">
+				<div class="product-title">Exciter 150cc</div>
+
+			</div>
+			<div class="product-price">15000000</div>
+			<div class="product-quantity">
+				<input type="number" value="2" min="1">
+			</div>
+			<div class="product-removal">
+				<button class="remove-product">
+					Xóa
+				</button>
+			</div>
+			<div class="product-line-price">150000000</div>
+		</div>
+
+
+		<div class="product">
+			<div class="product-image">
+				<img src="./image/yamaha-red.jpg">
+			</div>
+			<div class="product-details">
+				<div class="product-title">Yamaha 125cc</div>
+
+			</div>
+			<div class="product-price">15000000</div>
+			<div class="product-quantity">
+				<input type="number" value="2" min="1">
+			</div>
+			<div class="product-removal">
+				<button class="remove-product">
+					Xóa
+				</button>
+			</div>
+			<div class="product-line-price">150000000</div>
+		</div>
+		<div class="product">
+			<div class="product-image">
+				<img src="./image/yama-thuong.jpg">
+			</div>
+			<div class="product-details">
+				<div class="product-title">Yamaha R15V3 155cc</div>
+
+			</div>
+			<div class="product-price">15000000</div>
+			<div class="product-quantity">
+				<input type="number" value="2" min="1">
+			</div>
+			<div class="product-removal">
+				<button class="remove-product">
+					Xóa
+				</button>
+			</div>
+			<div class="product-line-price">150000000</div>
+		</div>
+
+		<div class="product">
+			<div class="product-image">
+				<img src="./image/honad125i2020.jpg">
+			</div>
+			<div class="product-details">
+				<div class="product-title">Honda sh125i</div>
+			</div>
+			<div class="product-price">150000000</div>
+			<div class="product-quantity">
+				<input type="number" value="1" min="1">
+			</div>
+			<div class="product-removal">
+				<button class="remove-product">
+					Xóa
+				</button>
+			</div>
+			<div class="product-line-price">15000000</div>
+		</div>
+
+		<div class="totals">
+			<div class="totals-item">
+				<label>Tổng tiền</label>
+				<div class="totals-value" id="cart-subtotal">50000000</div>
+			</div>
+			<div class="totals-item">
+				<label>Thuế (5%)</label>
+				<div class="totals-value" id="cart-tax">1000000</div>
+			</div>
+			<div class="totals-item">
+				<label>Shipping</label>
+				<div class="totals-value" id="cart-shipping">1500000</div>
+			</div>
+			<div class="totals-item totals-item-total">
+				<label>Tổng thanh toán</label>
+				<div class="totals-value" id="cart-total">62500000</div>
+			</div>
+		</div>
+
+		<button class="checkout" style="width: 15%;border-radius: 10px;">Đặt hàng</button>
+
+	</div>
+	<div class="footer-bar">
+
+
+	</div>
+	<div id="text-lh" data-aos="fade-up" data-aos-duration="3000">
+		<h1 id="lh-1">
+			CHÚNG TÔI LÀ AI?
+		</h1>
+		<p class="why">
+			Chúng tôi là đơn vị kinh doanh sỉ và lẻ về xe máy tại Nhật Bản.
+			Được thành lập vào năm 2021, trụ sở tại LENGEND,
+			nơi được biết đến với các điểm tham quan đẹp, đồ ăn ngon và văn hóa thể thao đua xe.
+			Hơn 20 năm kinh nghiệm kinh doanh thiết bị và phụ tùng xe máy tốt nhất của Nhật Bản.
+			Chúng tôi là một nhóm những người đam mê và tự hào về những gì chúng tôi làm,
+			phương châm của chúng tôi là "Tận Tình, Vì Quí Khách".
+			Chúng tôi xin nhiệt liệt chào mừng bạn trở thành một thành viên của cộng đồng.
+		</p>
+		<div class="foot-logo">
+			<img src="image/logo.jpg" alt="">
+		</div>
+	</div><!-- End text-lh -->
+	<div id="lien-he">
+
+	</div>
+	<div id="text-lh" data-aos="fade-up" data-aos-duration="3000">
+		<h1 id="lh-1">
+			TẠI SAO LÀ CHÚNG TÔI?
+		</h1>
+		<p class="why">
+			Chúng tôi biết cách giải quyết các vấn đề khi kinh doanh về xe máy.
+			Đội ngũ kho chuyên nghiệp xử lý hàng nghìn đơn hàng hàng ngày,
+			Chúng tôi muốn trở thành cầu nối giữa Nhật Bản và thị trường nước ngoài để mang đến nhiều
+			sản phẩm cho người đi mô tô xe máy toàn thế giới.
+		</p>
+	</div><!-- End text-lh -->
+	<p class="contact">Liên hệ ngay cho chúng tôi</p>
+	<div id="foot-lien-he">
+		<div class="moto-aos" data-aos="fade-right">
+			<img src="image/bg.png" alt="" class="aos-moto">
+		</div>
+		<form action="javascript:hello()" id="form_Demo">
+			<input type="text" name="ten" class="ten" placeholder="Name...">
+			<input type="text" name="sdt" class="ten" placeholder="Phone...">
+			<input type="email" name="mail" class="ten" placeholder="Email...">
+			<input type="text" name="diachi" class="ten" placeholder="Address...">
+			<textarea name="" class="ten_1" cols="34" rows="8" placeholder="Message"></textarea>
+			<button type="submit" id="but_1">Submit Now</button>
+		</form>
+		<div class="moto-aos" data-aos="fade-left">
+			<img src="image/bg2.png" alt="" class="aos-moto">
+		</div>
+	</div><!-- End foot lien-he -->
+
+	<div id="alert" style="display: none;">
+		Chúng tôi sẽ liên hệ với bạn sau khi nhận được tin nhắn
+	</div>
+
+	<div id="footer">
+		<div class="dich-vu">
+			<p class="text-ft">Dịch Vụ Khách Hàng</p>
+			<ul class="sb-dich-vu">
+				<li class="text-dv">Liên hệ</li>
+				<li class="text-dv">Chi phí vận chuyển</li>
+				<li class="text-dv">Dịch vụ trả hàng</li>
+				<li class="text-dv">Đảm bảo hoàn tiền</li>
+				<li class="text-dv">Theo dõi vận chuyển</li>
+			</ul>
+		</div>
+		<div class="don-dat-hang">
+			<p class="text-ft">Dịch Vụ Giao Hàng</p>
+			<ul class="sb-dh">
+				<li class="text-dh">Tình trạng đặt hàng</li>
+				<li class="text-dh">Tài khoản của bạn</li>
+				<li class="text-dh">Giỏ hàng</li>
+				<li class="text-dh">Giao hàng</li>
+				<li class="text-dh">Thanh toán</li>
+				<li class="text-dh">Điều khoản và điều kiện sử dụng</li>
+			</ul>
+		</div>
+		<div class="ve-chung-toi">
+			<p class="text-ft">Về Chúng Tôi</p>
+			<a href="#" class="ic-ft"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+			<a href="#" class="ic-ft"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="ic-ft"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="ic-ft"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</div>
+		<div class="visa">
+			<div class="text-ft">Thời gian làm việc</div>
+			<hr width="15%" class="rulerr" color="white" align="left">
+			<div class="time_work">
+				<div class="day">MonDAy</div>
+				<div class="times">7:30 am - 5:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">TuesDAy</div>
+				<div class="times">7:30 am - 5:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">WednesDAy</div>
+				<div class="times">7:30 am - 5:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">ThursDAy</div>
+				<div class="times">7:30 am - 5:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">FriDAy</div>
+				<div class="times">7:30 am - 5:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">SaturDAy</div>
+				<div class="times">8:30 am - 4:00 pm</div>
+			</div>
+			<div class="time_work">
+				<div class="day">SunDAy</div>
+				<div class="times">Closed - Closed</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			/* Set rates + misc */
+			var taxRate = 0.05;
+			var shippingRate = 15.00;
+			var fadeTime = 300;
+
+
+			/* Assign actions */
+			$('.product-quantity input').change(function () {
+				updateQuantity(this);
+			});
+
+			$('.product-removal button').click(function () {
+				removeItem(this);
+			});
+
+
+			/* Recalculate cart */
+			function recalculateCart() {
+				var subtotal = 0;
+
+				/* Sum up row totals */
+				$('.product').each(function () {
+					subtotal += parseFloat($(this).children('.product-line-price').text());
+				});
+
+				/* Calculate totals */
+				var tax = subtotal * taxRate;
+				var shipping = (subtotal > 0 ? shippingRate : 0);
+				var total = subtotal + tax + shipping;
+
+				/* Update totals display */
+				$('.totals-value').fadeOut(fadeTime, function () {
+					$('#cart-subtotal').html(subtotal.toFixed(2));
+					$('#cart-tax').html(tax.toFixed(2));
+					$('#cart-shipping').html(shipping.toFixed(2));
+					$('#cart-total').html(total.toFixed(2));
+					if (total == 0) {
+						$('.checkout').fadeOut(fadeTime);
+					} else {
+						$('.checkout').fadeIn(fadeTime);
+					}
+					$('.totals-value').fadeIn(fadeTime);
+				});
+			}
+
+
+			/* Update quantity */
+			function updateQuantity(quantityInput) {
+				/* Calculate line price */
+				var productRow = $(quantityInput).parent().parent();
+				var price = parseFloat(productRow.children('.product-price').text());
+				var quantity = $(quantityInput).val();
+				var linePrice = price * quantity;
+
+				/* Update line price display and recalc cart totals */
+				productRow.children('.product-line-price').each(function () {
+					$(this).fadeOut(fadeTime, function () {
+						$(this).text(linePrice.toFixed(2));
+						recalculateCart();
+						$(this).fadeIn(fadeTime);
+					});
+				});
+			}
+
+
+			/* Remove item from cart */
+			function removeItem(removeButton) {
+				/* Remove row from DOM and recalc cart total */
+				var productRow = $(removeButton).parent().parent();
+				productRow.slideUp(fadeTime, function () {
+					productRow.remove();
+					recalculateCart();
+				});
+			}
+
+		});
+
+	</script>
+
+</body>
+
+</html>
