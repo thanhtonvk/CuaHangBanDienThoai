@@ -1,42 +1,54 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Quản lý bán hàng</title>
-    
-    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
-	<script type="text/javascript" src="files/js/jquery_min.js"></script>
-    <script type="text/javascript" src="files/js/sanpham.js"></script>
+
+    <link type="text/css" href="../files/css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="../files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="../files/js/danhmuc.js"></script>
 </head>
 
 <body>
-	<!--HEADER-->
+    <!--HEADER-->
     <div class="header">
-    	<a href="danhmuc.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ CỬA HÀNG XE MÁY</h1></a>
+        <a href="danhmuc.html" title="Quản lý bán hàng" style="outline:none;">
+            <h1>QUẢN LÝ CỬA HÀNG ĐIỆN THOẠI</h1>
+        </a>
         <div class="logout">
             Xin chào <b>ADMIN</b> | <a href="#" title="Log out">Log out</a>
         </div>
         <!--NAVIGATION BAR-->
         <ul class="navigation">
-        	<a href="danhmuc.html" title="Danh mục sản phẩm" class="navigation-item-selected"><li>Danh mục sản phẩm</li></a>
-            <a href="sanpham.html" title="Quản lý sản phẩm"><li>Quản lý sản phẩm</li></a>
-            <a href="donhang.html" title="Quản lý đơn hàng"><li>Quản lý đơn hàng</li></a>
-        </ul><!--NAVIGATION BAR-->
-    </div><!--END HEADER-->
-    
-    
+            <a href="danhmuc.html" title="Danh mục sản phẩm">
+                <li>Hãng sản xuất</li>
+            </a>
+            <a href="sanpham.html" title="Quản lý sản phẩm" class="navigation-item-selected">
+                <li>Quản lý sản phẩm</li>
+            </a>
+            <a href="donhang.html" title="Quản lý đơn hàng">
+                <li>Quản lý đơn hàng</li>
+            </a>
+        </ul>
+        <!--NAVIGATION BAR-->
+    </div>
+    <!--END HEADER-->
+
+
     <!--CONTENT-->
     <div class="content">
-    	<span class="ketquatimkiem">Tìm thấy 200 kết quả.</span>
-        
-    	<!--TIM KIEM-->
-    	<form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
-        	<input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
-        </form><!--END TIM KIEM-->
-    	
+        <span class="ketquatimkiem">Tìm thấy 200 kết quả.</span>
+
+        <!--TIM KIEM-->
+        <form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
+            <input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form>
+        <!--END TIM KIEM-->
+
         <!--DANH SACH-->
         <div class="danhsach">
-        	<ul class="danhsach-header">
+            <ul class="danhsach-header">
                 <li style="width:60px;">ID</li>
                 <li style="width:250px;">Tên sản phẩm</li>
                 <li style="width:200px;">Danh mục</li>
@@ -45,16 +57,16 @@
                 <li style="width:130px;">Đơn giá</li>
                 <li style="width:80px; text-align:center;">Trạng thái</li>
                 <li style="width:100px; float:right; text-align:right;">
-                	<a href="themsanpham.html" name="btnThemSanPham" id="btnThemSanPham" title="Thêm sản phẩm mới">+ Thêm mới</a>
+                    <a href="themsanpham.html" name="btnThemSanPham" id="btnThemSanPham" title="Thêm sản phẩm mới">+ Thêm mới</a>
                 </li>
             </ul>
-            <div class="danhsach-chitiet">                
+            <div class="danhsach-chitiet">
                 <ul class="danhsach-item">
                     <li style="width:60px;">1</li>
-                    <li style="width:250px;">Yamaha R15 v3</li>
-                    <li style="width:200px;">Sport bike</li>
+                    <li style="width:250px;">Samsung Galaxy A32</li>
+                    <li style="width:200px;">Samsung</li>
                     <li style="width:200px;">
-                    	<a href="https://img.websosanh.vn/v10/users/review/images/z0sou1jq1wuf2/1561457868962_6532803.jpg?compress=85" title="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/1174529_721584957857833_159548707_n.jpg" target="_blank">
+                        <a href="https://img.websosanh.vn/v10/users/review/images/z0sou1jq1wuf2/1561457868962_6532803.jpg?compress=85" title="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/1174529_721584957857833_159548707_n.jpg" target="_blank">
                         	...57857833_159548707_n.jpg
                         </a>
                     </li>
@@ -70,10 +82,10 @@
                 </ul>
                 <ul class="danhsach-item">
                     <li style="width:60px;">2</li>
-                    <li style="width:250px;">Honda CBR 150cc</li>
-                    <li style="width:200px;">Sport bike</li>
+                    <li style="width:250px;">Samsung Galaxy s21 Ultra</li>
+                    <li style="width:200px;">Samsung</li>
                     <li style="width:200px;">
-                    	<a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
+                        <a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
                         	...k.us/822/374/nqlgfront.jpg
                         </a>
                     </li>
@@ -89,10 +101,10 @@
                 </ul>
                 <ul class="danhsach-item">
                     <li style="width:60px;">2</li>
-                    <li style="width:250px;">Honda CBR 150cc</li>
-                    <li style="width:200px;">Sport bike</li>
+                    <li style="width:250px;">Samsung galaxy x9</li>
+                    <li style="width:200px;">Samsung</li>
                     <li style="width:200px;">
-                    	<a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
+                        <a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
                         	...k.us/822/374/nqlgfront.jpg
                         </a>
                     </li>
@@ -108,10 +120,10 @@
                 </ul>
                 <ul class="danhsach-item">
                     <li style="width:60px;">3</li>
-                    <li style="width:250px;">SH 150cc</li>
-                    <li style="width:200px;">Tay ga</li>
+                    <li style="width:250px;">Iphone 13 Pro Max</li>
+                    <li style="width:200px;">Apple</li>
                     <li style="width:200px;">
-                    	<a href="https://muaxe.minhlongmoto.com/wp-content/uploads/2020/12/honda-sh150-2020.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
+                        <a href="https://muaxe.minhlongmoto.com/wp-content/uploads/2020/12/honda-sh150-2020.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
                         	...k.us/822/374/nqlgfront.jpg
                         </a>
                     </li>
@@ -127,10 +139,10 @@
                 </ul>
                 <ul class="danhsach-item">
                     <li style="width:60px;">4</li>
-                    <li style="width:250px;">Honda CBR 250cc</li>
-                    <li style="width:200px;">Sport bike</li>
+                    <li style="width:250px;">Samsung galaxy a12</li>
+                    <li style="width:200px;">Samsung</li>
                     <li style="width:200px;">
-                    	<a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
+                        <a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
                         	...k.us/822/374/nqlgfront.jpg
                         </a>
                     </li>
@@ -146,10 +158,10 @@
                 </ul>
                 <ul class="danhsach-item">
                     <li style="width:60px;">5</li>
-                    <li style="width:250px;">Kawasaki H2 1000cc</li>
-                    <li style="width:200px;">Sport bike</li>
+                    <li style="width:250px;">Samsung galaxy s10</li>
+                    <li style="width:200px;">Samsung</li>
                     <li style="width:200px;">
-                    	<a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
+                        <a href="https://minhlongmoto.com/wp-content/uploads/2018/10/Mau-xe-Honda-CBR-150R-2020-2.jpg" title="http://img822.imageshack.us/img822/374/nqlgfront.jpg" target="_blank">
                         	...k.us/822/374/nqlgfront.jpg
                         </a>
                     </li>
@@ -163,15 +175,19 @@
                         <a class="lnkXoa" name="btnXoa2" id="btnXoa2" data-id="2" title="Xoá sản phẩm">Xoá</a>
                     </li>
                 </ul>
-                
+
             </div>
-        </div><!--END DANH SACH-->
-        <div class="danhsach-navigation">
-            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
-            <label id="lblTrang">1/4 trang</label>
-            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
         </div>
-    </div><!--END CONTENT-->
+        <!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">
+                < Trang cũ</a>
+                    <label id="lblTrang">1/4 trang</label>
+                    <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div>
+    <!--END CONTENT-->
 
 </body>
+
 </html>

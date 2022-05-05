@@ -1,42 +1,54 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Quản lý bán hàng</title>
-    
-    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
-	<script type="text/javascript" src="files/js/jquery_min.js"></script>
-    <script type="text/javascript" src="files/js/donhang.js"></script>
+
+    <link type="text/css" href="../files/css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="../files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="../files/js/danhmuc.js"></script>
 </head>
 
 <body>
-	<!--HEADER-->
+    <!--HEADER-->
     <div class="header">
-    	<a href="danhmuc.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ CỬA HÀNG XE MÁY</h1></a>
+        <a href="danhmuc.html" title="Quản lý bán hàng" style="outline:none;">
+            <h1>QUẢN LÝ CỬA HÀNG ĐIỆN THOẠI</h1>
+        </a>
         <div class="logout">
             Xin chào <b>ADMIN</b> | <a href="#" title="Log out">Log out</a>
         </div>
         <!--NAVIGATION BAR-->
         <ul class="navigation">
-        	<a href="danhmuc.html" title="Danh mục sản phẩm" class="navigation-item-selected"><li>Danh mục sản phẩm</li></a>
-            <a href="sanpham.html" title="Quản lý sản phẩm"><li>Quản lý sản phẩm</li></a>
-            <a href="donhang.html" title="Quản lý đơn hàng"><li>Quản lý đơn hàng</li></a>
-        </ul><!--NAVIGATION BAR-->
-    </div><!--END HEADER-->
-    
-    
+            <a href="danhmuc.html" title="Danh mục sản phẩm">
+                <li>Hãng sản xuất</li>
+            </a>
+            <a href="sanpham.html" title="Quản lý sản phẩm">
+                <li>Quản lý sản phẩm</li>
+            </a>
+            <a href="donhang.html" title="Quản lý đơn hàng" class="navigation-item-selected">
+                <li>Quản lý đơn hàng</li>
+            </a>
+        </ul>
+        <!--NAVIGATION BAR-->
+    </div>
+    <!--END HEADER-->
+
+
     <!--CONTENT-->
     <div class="content">
-    	<span class="ketquatimkiem">Tìm thấy 200 kết quả.</span>
-        
-    	<!--TIM KIEM-->
-    	<form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
-        	<input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
-        </form><!--END TIM KIEM-->
-    	
+        <span class="ketquatimkiem">Tìm thấy 200 kết quả.</span>
+
+        <!--TIM KIEM-->
+        <form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
+            <input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form>
+        <!--END TIM KIEM-->
+
         <!--DANH SACH-->
         <div class="danhsach">
-        	<ul class="danhsach-header">
+            <ul class="danhsach-header">
                 <li style="width:60px;">ID</li>
                 <li style="width:250px;">Khách hàng</li>
                 <li style="width:100px;">Ngày lập</li>
@@ -44,7 +56,7 @@
                 <li style="width:100px; float:right; text-align:right;">
                 </li>
             </ul>
-            <div class="danhsach-chitiet">                
+            <div class="danhsach-chitiet">
                 <ul class="danhsach-item">
                     <li style="width:60px;">1</li>
                     <li style="width:250px;">Bùi Bá Lộc</li>
@@ -55,7 +67,7 @@
                     </li>
                 </ul>
                 <div class="danhsach-subitem" id="chiTietDonHang1">
-                	<ul class="danhsach-subitem-header">
+                    <ul class="danhsach-subitem-header">
                         <li style="width:250px;">Sản phẩm</li>
                         <li style="width:100px;">Số lượng</li>
                         <li style="width:130px;">Đơn giá</li>
@@ -80,7 +92,7 @@
                         <li style="width:200px;">145.000</li>
                     </ul>
                 </div>
-                
+
                 <ul class="danhsach-item">
                     <li style="width:60px;">2</li>
                     <li style="width:250px;">Nguyễn Quốc Tuấn</li>
@@ -91,7 +103,7 @@
                     </li>
                 </ul>
                 <div class="danhsach-subitem" id="chiTietDonHang2">
-                <ul class="danhsach-subitem-header">
+                    <ul class="danhsach-subitem-header">
                         <li style="width:250px;">Sản phẩm</li>
                         <li style="width:100px;">Số lượng</li>
                         <li style="width:130px;">Đơn giá</li>
@@ -116,7 +128,7 @@
                         <li style="width:200px;">145.000</li>
                     </ul>
                 </div>
-                
+
                 <ul class="danhsach-item">
                     <li style="width:60px;">3</li>
                     <li style="width:250px;">Dương Diệu Pháp</li>
@@ -127,7 +139,7 @@
                     </li>
                 </ul>
                 <div class="danhsach-subitem" id="chiTietDonHang3">
-                	<ul class="danhsach-subitem-header">
+                    <ul class="danhsach-subitem-header">
                         <li style="width:250px;">Sản phẩm</li>
                         <li style="width:100px;">Số lượng</li>
                         <li style="width:130px;">Đơn giá</li>
@@ -152,17 +164,21 @@
                         <li style="width:200px;">145.000</li>
                     </ul>
                 </div>
-                
-            </div>
-        </div><!--END DANH SACH-->
-        <div class="danhsach-navigation">
-            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
-            <label id="lblTrang">1/4 trang</label>
-            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
-        </div>
-    </div><!--END CONTENT-->
-    
 
-    
+            </div>
+        </div>
+        <!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">
+                < Trang cũ</a>
+                    <label id="lblTrang">1/4 trang</label>
+                    <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div>
+    <!--END CONTENT-->
+
+
+
 </body>
+
 </html>
